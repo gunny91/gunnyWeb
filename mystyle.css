@@ -1,0 +1,46 @@
+   /*CSS style*/
+   a{
+        text-decoration: none;
+
+    }
+	
+	a:hover {
+				color: hotpink;
+	}
+
+	a:visited {
+				color: green;
+	}
+	
+	/*selected link*/
+	a:active {
+				color: blue;
+}
+	
+    h1{
+        font-size:45px;
+        text-align:center;
+        border-bottom: 1px solid gray
+        margin: 0px;
+        padding:20px;
+		/*background-color: lightblue;
+		opacity: 0.3;*/
+    }
+
+    ul{
+        border-right:1px solid gray;
+        width:100px;
+        margin:0;
+        padding:20;
+		/*background-color: lightblue;
+		opacity: 0.3;*/
+    }
+    body{
+			/*background-color: lightblue;*/
+			margin:0px;
+			/*
+			background-image: url("image1.png");
+			background-repeat: repeat-x;
+			background-position: middle;
+			 background-attachment: fixed;*/
+    }										
