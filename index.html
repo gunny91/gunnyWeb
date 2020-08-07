@@ -2,173 +2,149 @@
 
 <html>
 <head>
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Gunny's Web Page!</title>
-	
 	<link rel ="stylesheet" type="text/css" href="mystyle.css">
-  <style>
 
-    #grid{
-      display:grid;
-      grid-template-columns:150px 1fr;
-
-    }
-  </style>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome to Gunny's Web Page!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+<style>
+a{
+ text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+div{
+
+  text-align: justify;
+}
+
+h3 {
+
+	font-size:20px;
+	color:orange;
+	}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+ background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  /*background-color: #666;*/
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 1000px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 30px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 90%;
+  background-color: #f1f1f1;
+  height: 1000px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+	table{
+		width:30%;
+		border:1px solid #222;
+		border-collapse:collapse;
+		}
+
+		thead{
+		background:#eee;
+		}
+		
+		th,td {
+		border:1px solid #ccc;
+		padding:5px;
+		font-size:0.8em;}
+
+</style>
+</head>
 <body>
 
 
+<header>
+  <h2>Welcome to Gunny's WebPage!</h2>
+</header>
 
-<h1><a href="index.html"> Hello! This is Geonhee Cho's Web Page!</a></h1>
-<hr>
+<section>
+  <nav>
+    <ul>
+      <li><a href="cssDesigntest.html">About Me</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="#">Resume</a></li>
+	  <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+	<div>
+			<img src="image1.png" alt="alternative text" width="500" height= "500">
+	</div>
+ <hr>
 
-<div id="grid">
-<ul>
-	<li><a href="cssDesigntest.html">About </a></li>
-	<li><a href="projects.html">Projects </a></li>
-	<li><a href="resume.html">Resume </a></li>
-	<li><a href="contact.html">Contact </a></li>
-</ul>
-    <!--
-    <h2> This is heading 2 </h2>
-    <hr>
-    <h3>This is heading 3 </h3>
-    <hr>
-    <p title="Fuck all that shit!">Not hello world</p>
-    <p style ="color:red;"> This is paragraph.</p>
-	  <p> The below HTML links connect to the Never .com</p>
-      <a href="https://www.naver.com"> This is NAver.com link</a>
-	   <p>This is<br>a paragraph<br>with line breaks.</p>
-    <p> <'br' >is a line breaker</p>
-	 <pre>
-      My Bonnie lies over the ocean.
+</p>
 
-      My Bonnie lies over the sea.
+  </article>
+</section>
 
-      My Bonnie lies over the ocean.
-
-      Oh, bring back my Bonnie to me.
-    </pre>
-    -->
-    <div id="grid">
-    <img src="image1.png" alt="alternative text" width="500" height= "500">
-</div>
-<!--
-   <div class="custom-select" style="width:200px;">
-        <select>
-          <option value="0">Select car:</option>
-          <option value="1">Audi</option>
-          <option value="2">BMW</option>
-          <option value="3">Citroen</option>
-          <option value="4">Ford</option>
-          <option value="5">Honda</option>
-          <option value="6">Jaguar</option>
-          <option value="7">Land Rover</option>
-          <option value="8">Mercedes</option>
-          <option value="9">Mini</option>
-          <option value="10">Nissan</option>
-          <option value="11">Toyota</option>
-          <option value="12">Volvo</option>
-        </select>
-  </div>
--->
-
-
-<!--
-<h1 style="background-color: tomato;">This is a heading</h1>
-<p style="background-color:tomato;">This is a paragraph.</p>
-
-
-<h1 style="font-size:300%;">This is a heading</h1>
-<p style="font-size:160%;">This is a paragraph.</p>
-
-<h1 style="text-align:center;">Centered Heading</h1>
-<p style="text-align:center;">Centered paragraph.</p>
-
-<strong>This text is important!</strong>
--->
-<!--
-<div id="grid">
-<br>
-<em>This text is emphasized</em>
-<br>
-<i>This text is italic</i>
-
-<br>
-<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
-<p>This is <sub>subscripted</sub> text.</p>
-<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-
-
-<address>
-Written by John Doe.<br>
-Visit us at:<br>
-Example.com<br>
-Box 564, Disneyland<br>
-USA
-</address>
-
-<br>
-<!-- This is a comment -->
-
-
-
-<!-- Remember to add more information here
-
-<button onclick="document.location = 'default.asp'">HTML Tutorial</button>
-<br>
-
-        <table style="width:100%">
-          <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
-        </table>
-</div>
--->
-</div>
-
-<i class="fas fa-cloud"></i>
-<i class="fas fa-heart"></i>
-<i class="fas fa-car"></i>
-<i class="fas fa-file"></i>
-<i class="fas fa-bars"></i>
-
-<br>
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-<p id="demo"></p>
-<br>
-<h2>What Can JavaScript Do?</h2>
-
-<p>JavaScript can change HTML attribute values.</p>
-
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+<footer>
+  <p><a href="index.html">Go back home(Footer) </a></p>
+</footer>
 
 </body>
-
-
-
 </html>
