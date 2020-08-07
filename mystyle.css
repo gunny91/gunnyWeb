@@ -29,14 +29,12 @@
 		/*background-color: lightblue;
 		opacity: 0.3;*/
     }
-
+	#navstuff{
+		
+		
+	}
     ul{
-        border-right:1px solid gray;
-        width:100px;
-        margin:0;
-        padding:20;
-		font-size:20px;
-		text-align:center;
+       
 		/*background-color: lightblue;
 		opacity: 0.3;*/
     }
@@ -95,8 +93,12 @@ nav {
 
 /* Style the list inside the menu */
 nav ul {
-  list-style-type: none;
-  padding: 0;
+		list-style-type: none;
+		padding: 0;
+		border-right:1px solid gray;
+		width:100px;
+		margin:0;     
+		text-align:center;
 }
 
 article {
