@@ -1,6 +1,31 @@
+/*mouse hover*/
+	a:link
+	{
+		text-decoration:none;
+		color:black;
+	}
+	a:visited
+	{
+		text-decoration:underline;
+		color:black;
+	}
+	
+	a:hover
+	{
+		background-color:yellow;
+	}
+			
+	a:active{
+		background-color:yellow;
+		color:red;
+	}
+
 a{
  text-decoration: none;
 }
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +34,7 @@ div{
 
   text-align: justify;
 }
-
+h1{font-size:2em;}
 h3 {
 
 	font-size:20px;
@@ -25,7 +50,7 @@ body {
 header {
  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
   /*background-color: #666;*/
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   font-size: 25px;
   color: white;
