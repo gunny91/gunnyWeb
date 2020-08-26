@@ -1,7 +1,14 @@
 
 
 
-
+.navi a{
+		color:White;
+		font:1.5em serif;
+		text-decoration: none;
+	}
+	a:hover{
+		color:red;
+	}
 
 header{
 		
@@ -28,15 +35,7 @@ header{
 		padding-left:70px;
 	}
 	
-	.navi a{
-		color:White;
-		font:1.5em serif;
-		text-decoration: none;
-	}
-	a:hover{
-		color:red;
-		
-	}
+	
 	
 
 
