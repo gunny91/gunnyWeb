@@ -1,41 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Projects</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="./../test/newCSS.css"/>
+	<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../test/newCSS.css"/>
+	<title>Project Digital Logic</title>
 <style>
-h1{
-		font-size: 3em;
-		text-align:right;
+	ul {
+	font-size: 25px !important;
 	}
-h2{text-align:right;}
-	div{
-		width:80%;
-		height:50%;
+
+	h1{
+	font-size:3em;
+	text-weight:strong;
+	}
+	.container-fluid h1{
+		font-size:5em;		
+		color:black;
+		font-weight: bold;	
 	}
 </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-
-<header>
-  <h1>Projects</h1>
-</header>
-
-<section>
- <nav class="navi">
-		<ul id="horizontal">
-	  <li><a href="./../index.html">Home</a></li>
-      <li><a href="./../test/myprofile.html">About Me</a></li>
-	  <li><a href="./../test/seniordesign.html">Senior Design</a></li>
-	  <li><a href="#">Contact</a></li>
+<!--  Upper Screen part -->
+	<div class="container-fluid" style="background-color:white; color:black; height:200px;">
+		<h1>Digital Logic</h1>
+		<h3>CPRE 281</h3>
+		
+	</div>
+	
+	<!-- Menu manage -->
+	<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <ul class="nav navbar-nav" >
+      <li ><a href="./../practice.html">Home</a></li>
+         <li><a href="./../test/profile.html">About Me</a></li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="test/projectsDL.html">Digital Logic</a></li>
+          <li><a href="#">JSP Project</a></li>
+          <li><a href="#">EE Project</a></li>
+        </ul>
+      </li>
+      <li><a href="./../test/seniordesign1.html">Senior Design</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
   <article>
-	<div>
+	<div class="container-fluid">
 		<h3><strong>Key-Pad Lock<strong></h3>
 		<img src = "./../images/digital-logic.png">
 		<h3><strong>What is the project about?</strong></h3>
@@ -70,11 +90,6 @@ h2{text-align:right;}
 		 </p>
 	</div>
   </article>
-</section>
-
-<footer>
-  <p><a href="./../index.html">Go back home(Footer) </a></p>
-</footer>
-
+	
 </body>
 </html>
