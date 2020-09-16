@@ -7,7 +7,8 @@
   	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
  	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Home</title>
+	 	<link rel="stylesheet" type="text/css" href="./../test/newCSS.css"/>
+	<title>Aout ME</title>
 <style>
 	ul {
 	font-size: 25px !important;
@@ -17,13 +18,46 @@
 	font-size:3em;
 	text-weight:strong;
 	}
-	article {
-	  float: left;
-	  padding: 10px;
-	  width: 100%;
-	  background-color: #f1f1f1;
-	  height: 1200px; /* only for demonstration, should be removed */
+	img{
+			border : 1px solid #EFEFEF;
+			box-shadow:1px 1px 10px #666666;
+			float:left;
+			margin: 5px 50px 30px 20px;
+
+		}
+	.myul1 li{
+			font-weight:normal;
+			font-size:20px;
+			padding-right:20px;
+			text-decoration:none;
+		}
+	.myul2 li{
+			font-weight:normal;
+			font-size:20px;
+			padding-right:20px;
+			text-decoration:none;
+			font-color:black;
 	}
+
+	a{text-decoration: none;}
+	h2{
+		font-size:25px;	
+	}
+	p{
+		font-size: 18px;
+	}
+	.firstP
+	{
+		width:70%;
+		height:40%;
+	}
+
+		
+	article h1{
+				font-size: 2em;
+				margin:20px;
+			 }
+	
 </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -31,13 +65,13 @@
 
 <!--  Upper Screen part -->
 	<div class="container-fluid" style="background-color:white; color:black; height:200px;">
-		<h1>Welcome to Gunny's Web Page!</h1>
-		<h3>Get to know Gunny</h3>
+		<h1>About me</h1>
+		<h3>Hello!</h3>
 		<p>Feel free to look it up!</p>
 	</div>
 	
 	<!-- Menu manage -->
-	<nav class="navbar navbar-inverse" >
+<nav class="navbar navbar-inverse" >
   <div class="container-fluid">
     <ul class="nav navbar-nav" >
       <li ><a href="#">Home</a></li>
@@ -57,13 +91,14 @@
   </div>
 </nav>
 
+
  <article>
 
    <h1>About Me</h1>
 	<img src="./../images/gunny.jpg" alt="My photo" width="350" height="350">
 
   <div class="firstP">
-	<p >Hi, my name is Geonhee Cho. I graduated from Iowa State university on May 2020.
+	<p>Hi, my name is Geonhee Cho. I graduated from Iowa State university on May 2020.
 	I am interested in web development with html, CSS, Java Script.
 	Furtheremore, I am learning sql, Android Studio for developting application
     I recently try to find the job to not only devote the web developemnt work
@@ -85,56 +120,55 @@
 	</ul>
 </div>
  <table>
+	<caption font-size:"22px";><Strong>Education Background</Strong> </caption>
+	<br>
+	<thead>
+	<tr>
+		<th>  School  </th>
+		<th>  Major  </th>
+		<th>  Terms  </th>
+		<th> GPA </th>
+		<th>  Gratuation  </th>
+	</tr>
+<tbody>
+	<tr>
+		<td>Iowa State Uiversity</td>
+		<td>Computer Engineering </td>
+		<td>2017.8~ 2020.5</td>
+		<td>3.23 / 4.0</td>
+		<td>Graduated</td>
+	</tr>
+	<tr>
+		<td>Ellsworth CC</td>
+		<td> Libral Art(Engineering)</td>
+		<td>2015.8~ 2017.5</td>
+		<td> 4.0 / 4.0</td>
+		<td>Graduated</td>
+	</tr>
 
-			<caption font-size:"22px";><Strong>Education Background</Strong> </caption>
-			<br>
-			<thead>
-				<tr>
-					<th>  School  </th>
-					<th>  Major  </th>
-					<th>  Terms  </th>
-					<th> GPA </th>
-					<th>  Gratuation  </th>
-				</tr>
-				<tbody>
-				<tr>
-					<td>Iowa State Uiversity</td>
-					<td>Computer Engineering </td>
-					<td>2017.8~ 2020.5</td>
-					<td>3.23 / 4.0</td>
-					<td>Graduated</td>
-				</tr>
-				<tr>
-					<td>Ellsworth CC</td>
-					<td> Libral Art(Engineering)</td>
-					<td>2015.8~ 2017.5</td>
-					<td> 4.0 / 4.0</td>
-					<td>Graduated</td>
-				</tr>
-
-				<tr>
-					<td>R.O.K Army Service</td>
-					<td> Management </td>
-					<td>2013.1~ 2015.1</td>
-					<td> N/A </td>
-					<td>Finished Duty</td>
-				</tr>
-				<tr>
-					<td>SungGongHea University</td>
-					<td> Japan Area Study </td>
-					<td>2011.3~ 2013.1</td>
-					<td>4.2 / 4.5</td>
-					<td>resignation</td>
-				</tr>
-				<tr>
-					<td>SungNam High-school</td>
-					<td> Literature </td>
-					<td>2009.9~ 2011.2</td>
-					<td> N/A</td>
-					<td>Graduated</td>
-				</tr>
-			</tbody>
-			</thead>
+	<tr>
+		<td>R.O.K Army Service</td>
+		<td> Management </td>
+		<td>2013.1~ 2015.1</td>
+		<td> N/A </td>
+		<td>Finished Duty</td>
+	</tr>
+	<tr>
+		<td>SungGongHea University</td>
+		<td> Japan Area Study </td>
+		<td>2011.3~ 2013.1</td>
+		<td>4.2 / 4.5</td>
+		<td>resignation</td>
+	</tr>
+	<tr>
+		<td>SungNam High-school</td>
+		<td> Literature </td>
+		<td>2009.9~ 2011.2</td>
+		<td> N/A</td>
+		<td>Graduated</td>
+	</tr>
+	</tbody>
+	</thead>
   </table>
   </article>
   </body>
