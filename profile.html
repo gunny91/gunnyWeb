@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	 	<link rel="stylesheet" type="text/css" href="./../test/newCSS.css"/>
+	<title>Aout Me</title>
+<style>
+.container-fluid h1{
+	
+	text-top:50px;
+	position:absolute;
+	right:20px;
+	bottom:70px;
+	font-size:3em;		
+	color:black;	
+	}
+	
+	ul {
+	font-size: 25px !important;
+	}
+
+	h1{
+	font-size:3em;
+	text-weight:strong;
+	}
+	img{
+			border : 1px solid #EFEFEF;
+			box-shadow:1px 1px 10px #666666;
+			float:left;
+			margin: 5px 50px 30px 20px;
+
+		}
+	.myul1 li{
+			font-weight:normal;
+			font-size:20px;
+			padding-right:20px;
+			text-decoration:none;
+		}
+	.myul2 li{
+			font-weight:normal;
+			font-size:20px;
+			padding-right:20px;
+			text-decoration:none;
+			font-color:black;
+	}
+
+	a{text-decoration: none;}
+	h2{
+		font-size:25px;	
+	}
+	p{
+		font-size: 18px;
+	}
+	.firstP
+	{
+		width:70%;
+		height:40%;
+	}
+
+		
+	article h1{
+				font-size: 2em;
+				margin:20px;
+			 }
+	
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+<!--  Upper Screen part -->
+	<div class="container-fluid" style="background-color:white; color:black; height:200px;">
+		<h1>About me</h1>
+		<h3>Hello!</h3>
+		<p>Feel free to look it up!</p>
+	</div>
+	
+	<!-- Menu manage -->
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <ul class="nav navbar-nav" >
+      <li ><a href="#">Home</a></li>
+         <li><a href="test/myprofile.html">About Me</a></li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="test/myprojects.html">Digital Logic</a></li>
+          <li><a href="#">JSP Project</a></li>
+          <li><a href="#">EE Project</a></li>
+        </ul>
+      </li>
+      <li><a href="test/seniordesign.html">Senior Design</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+ <article>
+
+   <h1>About Me</h1>
+	<img src="./../images/gunny.jpg" alt="My photo" width="350" height="350">
+
+  <div class="firstP">
+	<p>Hi, my name is Geonhee Cho. I graduated from Iowa State university on May 2020.
+	I am interested in web development with html, CSS, Java Script.
+	Furtheremore, I am learning sql, Android Studio for developting application
+    I recently try to find the job to not only devote the web developemnt work
+	but also enhance programming skills.
+	</p>
+
+	<ul class="myul1">
+	<h2>Skills<h2>
+		<li>Java, C, Linux</li>
+		<li>Front-End:HTML,CSS, JS, Android Studio</li>
+		<li>Back-End :JSP, SQL, JDBC, Spring-Boot</li>
+	</ul >
+
+	<ul class="myul2">
+	<h2>WebSite & E-mail<h2>
+		<li><a href="http://sdmay20-04.sd.ece.iastate.edu/" target="_blank"> Click here to Senior Design WebSite</a></li>
+		<li><a href="https://github.com/gunny91" target="_blank"> Click here to GitHub Repository</a></li>
+		<li>gunny910303@gmail.com</li>
+	</ul>
+</div>
+ <table>
+	<caption font-size:"22px";><Strong>Education Background</Strong> </caption>
+	<br>
+	<thead>
+	<tr>
+		<th>  School  </th>
+		<th>  Major  </th>
+		<th>  Terms  </th>
+		<th> GPA </th>
+		<th>  Gratuation  </th>
+	</tr>
+<tbody>
+	<tr>
+		<td>Iowa State Uiversity</td>
+		<td>Computer Engineering </td>
+		<td>2017.8~ 2020.5</td>
+		<td>3.23 / 4.0</td>
+		<td>Graduated</td>
+	</tr>
+	<tr>
+		<td>Ellsworth CC</td>
+		<td> Libral Art(Engineering)</td>
+		<td>2015.8~ 2017.5</td>
+		<td> 4.0 / 4.0</td>
+		<td>Graduated</td>
+	</tr>
+
+	<tr>
+		<td>R.O.K Army Service</td>
+		<td> Management </td>
+		<td>2013.1~ 2015.1</td>
+		<td> N/A </td>
+		<td>Finished Duty</td>
+	</tr>
+	<tr>
+		<td>Study Abroad</td>
+		<td> Japan Area Study </td>
+		<td>2011.3~ 2013.1</td>
+		<td>4.2 / 4.5</td>
+		<td>resignation</td>
+	</tr>
+	<tr>
+		<td>SungNam High-school</td>
+		<td> Literature </td>
+		<td>2009.9~ 2011.2</td>
+		<td> N/A</td>
+		<td>Graduated</td>
+	</tr>
+	</tbody>
+	</thead>
+  </table>
+  </article>
+  </body>
+</html>

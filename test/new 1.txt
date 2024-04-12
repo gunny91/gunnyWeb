@@ -1,0 +1,19 @@
+class ExamClass{
+
+	public static void main(String[] args)
+	{
+		String name = args[0];
+		String age = args[1];
+		String height = args[2];
+		
+		if(args.length !=3){
+			System.out.println("Parameter needs to 3");
+			System.out.println("How to use? : Name, Age, Height");
+		}
+		
+		for(int i =0; i < args.length;i++){
+			System.out.println(args[i]);
+		}
+	}
+	
+}

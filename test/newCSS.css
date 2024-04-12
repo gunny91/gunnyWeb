@@ -1,0 +1,124 @@
+
+
+
+.navi a{
+		color:White;
+		font:1.5em serif;
+		text-decoration: none;
+	}
+	a:hover{
+		color:red;
+	}
+
+header{
+		
+	position:relative;
+	height: 220px;
+	background-image: url('/gopro.jpg');
+	background-repeat: no-repeat;
+	background-position:center;
+	}
+	
+	#horizontal{
+		list-style:none;
+		width:100%;
+		background-color:black;
+		margin:0px;
+		padding:15px;
+		text-align:center;
+		text-decoration:none;
+	}
+	
+	
+	#horizontal li{
+		display:inline;
+		padding-left:70px;
+	}
+	
+	
+	
+
+
+
+header h1{
+	
+	text-top:50px;
+	position:absolute;
+	right:20px;
+	bottom:70px;
+	font-size:3em;		
+	color:black;	
+	}
+header h2{
+	position:absolute;
+	right:20px;
+	bottom:30px;
+	font-size:2em;
+	color:black;	
+	
+}
+
+h3 {
+	font-size:20px;
+	color:orange;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Create two columns/boxes that floats next to each other */
+
+
+article {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  
+  height: 100%; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+	table{
+		width:30%;
+		border:1px solid #222;
+		border-collapse:collapse;
+		}
+
+		thead{
+		background:#eee;
+		}
+		
+		th,td {
+		border:1px solid #ccc;
+		padding:5px;
+		font-size:0.8em;}

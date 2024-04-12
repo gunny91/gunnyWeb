@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a{
+ text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 700px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 30px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 90%;
+  background-color: #f1f1f1;
+  height: 700px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+	table{
+		width:30%;
+		border:1px solid #222;
+		border-collapse:collapse;
+		}
+
+		thead{
+		background:#eee;
+		}
+		
+		th,td {
+		border:1px solid #ccc;
+		padding:5px;
+		font-size:0.8em;}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>About Me</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="#">Resume</a></li>
+	  <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>About Me</h1>
+    <p>Hi, my name is Geonhee Cho. I graduated from Iowa State university on May 2020. I am interested in web development with html, CSS, Java Script.</p>
+    <p>I recently try to find the job to not only devote the web developemnt work but also enhance programming skills.</p>
+	
+	<br>
+ <table>
+			
+			<caption><Strong>Education Background</Strong> </caption>
+			<br>
+			<thead>
+				<tr>
+					<th>  School  </th>
+					<th>  Major  </th>
+					<th>  Terms  </th>
+					<th> GPA </th>
+					<th>  Gratuation  </th>
+				</tr>
+				<tbody>
+				<tr>
+					<td>Iowa State Uiversity</td>
+					<td>Computer Engineering </td>
+					<td>2017.8~ 2020.5</td>
+					<td>3.23 / 4.0</td>
+					<td>Graduated</td>
+				</tr>
+				<tr>
+					<td>Ellsworth CC</td>
+					<td> Libral Art(Engineering)</td>
+					<td>2015.8~ 2017.5</td>
+					<td> 4.0 / 4.0</td>
+					<td>Graduated</td>
+				</tr>
+				
+				<tr>
+					<td>R.O.K Army Service</td>
+					<td> Management </td>
+					<td>2013.1~ 2015.1</td>
+					<td> N/A </td>
+					<td>Finished Duty</td>
+				</tr>
+				<tr>
+					<td>SungNam High-school</td>
+					<td> Literature </td>
+					<td>2009.9~ 2011.2</td>
+					<td> N/A</td>
+					<td>Graduated</td>
+				</tr>
+			</tbody>
+			</thead>
+  </table>
+  </article>
+</section>
+
+<footer>
+  <p><a href="index.html">Go back home(Footer) </a></p>
+</footer>
+
+</body>
+</html>
