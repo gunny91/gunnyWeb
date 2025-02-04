@@ -1,86 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Senior Design</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="./../test/newCSS.css"/>
-<style>
-	div{
-		width:80%;
-		height:50%;
-	}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Senior Design Project</title>
 
-	h1{
-			font-size: 3em;
-			text-align:right;
-		}
-	h2{text-align:right;}
-</style>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('https://source.unsplash.com/1600x600/?technology,coding') center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 50px 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Links */
+        .project-link {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Gunny's Projects</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="./../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./../test/profile.html">About Me</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./../test/projectsDL.html">Digital Logic</a></li>
+                        <li><a class="dropdown-item" href="#">JSP Project</a></li>
+                        <li><a class="dropdown-item" href="#">EE Project</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="./../test/seniordesign1.html">Senior Design</a></li>
+                <li class="nav-item"><a class="nav-link" href="./../test/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<header>
-  <h1>Embedded System Platform Movement & Code Optimization</h1>
-</header>
+<!-- Hero Section -->
+<div class="hero-section">
+    <div>
+        <h1>Senior Design Project</h1>
+        <h3>Embedded System Platform Movement & Code Optimization</h3>
+    </div>
+</div>
 
-<section>
- <nav class="navi">
-		<ul id="horizontal">
-	  <li><a href="./../index.html">Home</a></li>
-      <li><a href="./../test/myprofile.html">About Me</a></li>
-      <li><a href="./../test/myprojects.html">Projets</a></li>
-	  <li><a href="./../test/contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Content Section -->
+<div class="container content-section">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>📌 Project Overview</h2>
+            <p>
+                The goal of our **Senior Design Project** was to develop **unit tests for 288 different codes**.
+                We set up a **GitLab** workspace for collaboration and workflow management.
+            </p>
 
-  <article>
-	<div>
-		<h3><strong>Description of Project<strong></h3>
-			<p>Our project goal is to create unit tests for all the 288 codes.
-			So, for this work, we set up the git lab to make about teamwork station.
-			So far, we just met the professor on September 13th,
-			we just have small idea how to make the unit tests for the 288 codes.
-			Our team will contribute all members to work on the create unit tests.
-			For the next week, our team will meet on the Monday and plan to work on this idea.
-			During our education journey, our group members had participated with some of projects before,
-			we are very gentle to help to other members who got in trouble with our project.
-			For this project, we need to deep into know more about C program, especially unit test one. So we will learn more about it together
-			</p>
-		<h3><strong>Role of Project</strong></h3>
-			<p>  I was in charge of the report manager in my group.
-			I think it is fit for my position because I am strictly keeping the time to do.
-			Also, from my previous major in education in Korea, I wrote many reports for the education,
-			so I think this job will not hard to do it for me. I think I had experiences from the Korean army that
-			I lead our small troop members and one of my jobs was to report our troop members or status to the base commander.
-			I think it will be a similar job instead I need to use more English.
-			In addition, I enjoyed to take ENGL 314 (Technical Writing) and I did well in that class too, so I think I am good to the role in report manager.
-			</p>
+            <p>
+                We had our first meeting with the professor on **September 13th**, where we gained insights on
+                how to approach unit testing for such a large codebase. Over the next few weeks, we planned
+                our development strategy and team collaboration methods.
+            </p>
+        </div>
+    </div>
 
-		<h3><strong>New Skills/Knowledge acquired</strong></h3>
-			<ul>
-				<li>Continuous Integration </li>
-				<li>	Simulation</li>
-			</ul>
+    <hr>
 
-		<h3><strong>Describe the project</strong></h3>
-		<p>In Progress </p>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>💼 My Role</h2>
+            <p>
+                I was responsible for **report management** within the team.
+                Due to my **strict time management skills** and prior experience in **technical writing**, 
+                I was well-suited for this role.
+            </p>
+            <p>
+                My previous background in **education in Korea** and my experience in the **Korean military** 
+                also helped me efficiently **document and communicate** key project updates.
+            </p>
+        </div>
 
+        <div class="col-md-6">
+            <h2>📚 New Skills Acquired</h2>
+            <ul>
+                <li>✅ Continuous Integration (CI/CD)</li>
+                <li>✅ Simulation & Testing</li>
+                <li>✅ Embedded Systems Development</li>
+                <li>✅ Team Collaboration using GitLab</li>
+            </ul>
+        </div>
+    </div>
 
-		<h3><strong>Team Web Site</strong></h3>
-		 <a href="http://sdmay20-04.sd.ece.iastate.edu/" target="_blank">Clike this Link!</a>
-	</div>
- <hr>
+    <hr>
 
-</p>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>🔧 Project Development</h2>
+            <p>
+                The project is currently **in progress**. We are working towards implementing **automated unit tests** 
+                and optimizing the embedded system platform for better performance.
+            </p>
+        </div>
 
-  </article>
-</section>
+        <div class="col-md-6">
+            <h2>🌐 Team Website</h2>
+            <a href="http://sdmay20-04.sd.ece.iastate.edu/" target="_blank" class="project-link">🔗 Visit Our Team Website</a>
+        </div>
+    </div>
+</div>
 
-<footer>
-  <p><a href="./../index.html">Go back home(Footer) </a></p>
-</footer>
+<!-- Footer -->
+<div class="footer">
+    <p><a href="./../index.html" class="project-link">⬅ Go back to Home</a></p>
+</div>
+
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -1,95 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-  	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
- 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="./../test/newCSS.css"/>
-	<title>Project Digital Logic</title>
-<style>
-	ul {
-	font-size: 25px !important;
-	}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project: Digital Logic</title>
 
-	h1{
-	font-size:3em;
-	text-weight:strong;
-	}
-	.container-fluid h1{
-		font-size:5em;		
-		color:black;
-		font-weight: bold;	
-	}
-</style>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('https://source.unsplash.com/1600x600/?technology,circuit') center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 50px 0;
+        }
+
+        /* Project Image */
+        .project-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<!--  Upper Screen part -->
-	<div class="container-fluid" style="background-color:white; color:black; height:200px;">
-		<h1>Digital Logic</h1>
-		<h3>CPRE 281</h3>
-		
-	</div>
-	
-	<!-- Menu manage -->
-	<nav class="navbar navbar-inverse" >
-  <div class="container-fluid">
-    <ul class="nav navbar-nav" >
-      <li ><a href="./../index.html">Home</a></li>
-         <li><a href="./../test/profile.html">About Me</a></li>
-	  <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="./../test/projectsDL.html">Digital Logic</a></li>
-          <li><a href="#">JSP Project</a></li>
-          <li><a href="#">EE Project</a></li>
-        </ul>
-      </li>
-      <li><a href="./../test/seniordesign1.html">Senior Design</a></li>
-      <li><a href="./../test/contact.html">Contact</a></li>
-    </ul>
-  </div>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Gunny's Projects</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="./../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./../test/profile.html">About Me</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./../test/projectsDL.html">Digital Logic</a></li>
+                        <li><a class="dropdown-item" href="#">JSP Project</a></li>
+                        <li><a class="dropdown-item" href="#">EE Project</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./../test/seniordesign1.html">Senior Design</a></li>
+                <li class="nav-item"><a class="nav-link" href="./../test/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-  <article>
-	<div class="container-fluid">
-		<h3><strong>Key-Pad Lock<strong></h3>
-		<img src = "./../images/digital-logic.png">
-		<h3><strong>What is the project about?</strong></h3>
-		<p>This is the project from the Digital Logic CPRE 281 class.
-		   It is going to use the logic gates, Verilog to make a door lock design.</p>
+<!-- Hero Section -->
+<div class="hero-section">
+    <div>
+        <h1>Digital Logic</h1>
+        <h3>CPRE 281 - Keypad Lock System</h3>
+    </div>
+</div>
 
-		<h3><strong>Identify the project</strong></h3>
-		<p>This is quite normal concept in my living environment in my country.
-		I had used digital door lock since 2002.
-		This project consisted of using Verilog to design various circuits.<br>
-		We can not only use the circuits diagrams but also use the code from the Verilog. </p>
+<!-- Content Section -->
+<div class="container content-section">
+    <div class="row">
+        <div class="col-lg-5 text-center">
+            <img src="./../images/digital-logic.png" alt="Digital Logic Project" class="project-img">
+        </div>
+        <div class="col-lg-7">
+            <h2>🔹 What is this project?</h2>
+            <p>
+                This project was part of the **Digital Logic CPRE 281 class**.  
+                The goal was to design a **keypad door lock system** using **logic gates and Verilog**.
+            </p>
 
-		<h3><strong>Describe the project</strong></h3>
-		<p>The project is pretty simple that save the password of key pad lock, and reset it.
-		There are several steps that below. </p>
+            <h2>🔹 Why this project?</h2>
+            <p>
+                Digital locks have been common in my home country since 2002.  
+                This project applies **Verilog-based circuit design** to implement a secure locking system.
+            </p>
+        </div>
+    </div>
 
-		<ul>
-			<li> Unlock door after a 4 digit password has been entered using push buttons,
-			 e.g., the push buttons pressed one at a time and in this order 1,2,3, and 4 would result in a code of 1234.  </li>
-			<li> Lock indicates the current entered code on 4 7-seg displays. Non-entered digits should not display any number. </li>
-			<li> Lock checks code after the 4th button has been pressed and clears current entered code. </li>
-			<li> Lock keeps track of incorrect attempts. </li>
-			<li> Lock indicates when it is locked, unlocked, locked until hard reset, and entering in a new code. </li>
-			<li> After hard reset, the code is 1111, and number of incorrect attempts is 0. </li>
-		</ul>
+    <hr>
 
-		<h3><strong>Identify Skills</strong></h3>
-		<p>  The skills were that we learned from lectures. However, everything that I learned from lecture was all new for me.
-		I learned what is the C languages, Verilog, and digital logic circuit design.
-		 I feel like this skills that I did during the final project will be used throughout my career.
-		 If I am design the computer simple hardware in the future, this skills will help me to reduce not only the price of the hardware design but also control the CPU.
-		 </p>
-	</div>
-  </article>
-	
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>🛠 Project Description</h2>
+            <p>The keypad lock system includes these main functionalities:</p>
+            <ul>
+                <li>🔑 **Unlock** the door when a **4-digit password** is entered.</li>
+                <li>📟 Displays entered digits on **7-segment displays**.</li>
+                <li>❌ Tracks **incorrect attempts** & locks the system if exceeded.</li>
+                <li>🔄 Allows **resetting the password** using a hard reset.</li>
+                <li>🛡 Default password is **1111** after a hard reset.</li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h2>📚 Skills Learned</h2>
+            <ul>
+                <li>✅ **Verilog & Digital Logic**</li>
+                <li>✅ **Circuit Design & Simulation**</li>
+                <li>✅ **Hardware Programming (FPGA)**</li>
+                <li>✅ **Problem-Solving in Embedded Systems**</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2025 Gunny's Projects. All Rights Reserved.</p>
+</div>
+
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

@@ -1,96 +1,150 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="test/ui.css"/>
-<title>Home</title>
-<style>
-ul {
-	font-size: 25px !important;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Gunny</title>
 
-h1 {
-	font-size: 3em;
-	text-weight: strong;
-}
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-.container-fluid h1 {
-	font-size: 5em;
-	color: black;
-	font-weight: bold;
-}
-</style>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('https://source.unsplash.com/1600x600/?contact,communication') center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        /* Form Styling */
+        .form-section {
+            padding: 50px 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .form-container label {
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-	<!--  Upper Screen part -->
-	<div class="container-fluid"
-		style="background-color: white; color: black; height: 200px;">
-		<h1>Have some questions?</h1>
-		<h3>Contact to Gunny</h3>
+<body>
 
-	</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Gunny's Contact Page</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">About Me</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="projectsDL.html">Digital Logic</a></li>
+                        <li><a class="dropdown-item" href="#">JSP Project</a></li>
+                        <li><a class="dropdown-item" href="#">EE Project</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="seniordesign1.html">Senior Design</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-	<!-- Menu manage -->
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<ul class="nav navbar-nav">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="profile.html">About Me</a></li>
-				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="projectsDL.html">Digital Logic</a></li>
-						<li><a href="#">JSP Project</a></li>
-						<li><a href="#">EE Project</a></li>
-					</ul></li>
-				<li><a href="seniordesign1.html">Senior Design</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
+<!-- Hero Section -->
+<div class="hero-section">
+    <div>
+        <h1>Have Questions?</h1>
+        <h3>Contact Gunny Below</h3>
+    </div>
+</div>
 
+<!-- Contact Form Section -->
+<div class="container form-section">
+    <div class="form-container">
+        <h3>📩 Reach out to Gunny</h3>
+        <form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbx4cExTiGWniMoIw6Wardp4W0Dv-sQrujU0hQ87/exec" name="contactus">
+            
+            <div class="mb-3">
+                <label for="name">Name <span class="text-danger">*</span></label>
+                <input type="text" id="name" name="name" class="form-control" required placeholder="Your Name">
+            </div>
 
-<div class="container">
-		<section class="content_wrap">
-			<h3 class="form_tit">Reach to Gunny!</h3>
-		<form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbx4cExTiGWniMoIw6Wardp4W0Dv-sQrujU0hQ87/exec" name="contactus">
-			<fieldset>
-				<legend>Contact Us</legend>
-				<div class="formlist">
-									<div class="form-group">
-											<label for="name" >Name <sup>*</sup></label>
-											<span class="inputbox"><input type="text" id="name" name="name" required placeholder="Write your name"/></span>
-									</div>
-									<div class="form-group">
-											<label for="email">Email<sup>*</sup></label>
-											<span class="inputbox"><input type="email" id="email" name="email" required placeholder="sample@mail.com" /></span>
-									</div>
-									<div class="form-group">
-											<label for="message">Inquery Content<sup>*</sup></label>
-											<span class="textbox">
-											<textarea rows="10" cols="20" class="form-control" id="message" name="message" placeholder="Wirte your inquery" required></textarea>
+            <div class="mb-3">
+                <label for="email">Email <span class="text-danger">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="yourname@example.com">
+            </div>
 
-											</span>
-									</div>
-									<div class="btn_box">
-											<button class="btn btn-info" type="submit" class="commbtn gray">Ask</button>
-									</div>
-								</div>
-								<div class="thankyou_message">
-							
-								</div>
-			</fieldset>
-		</form>
-		</section>
-	</div>
+            <div class="mb-3">
+                <label for="message">Inquiry <span class="text-danger">*</span></label>
+                <textarea rows="5" class="form-control" id="message" name="message" required placeholder="Write your inquiry here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
+
+            <div class="thankyou_message mt-3 text-center text-success" style="display: none;">
+                ✅ Thank you for your message! We'll get back to you soon.
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p><a href="../index.html" class="text-white">⬅ Go back to Home</a></p>
+</div>
+
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
